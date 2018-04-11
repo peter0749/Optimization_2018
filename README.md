@@ -1,4 +1,4 @@
 # Optimization_2018
 
 ### HW1: Gradient Descent
-1. (batch size = 1)
+1. (batch size = N)
