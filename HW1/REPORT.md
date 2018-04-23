@@ -157,7 +157,7 @@ class Adam(object):
 
 #### 實驗結果（一）
 
-對於第一個函數 ( $f(x) = x^4 - 3x^2 + 2$ )，三種方法得到的 local minimum 如下：
+對於第一個函數 ( $f(x) = x^4 - 3x^2 + 2$ )，三種方法得到的 local minimizer 如下：
 
 | 方法 | 變數值 | 函數值 |
 | -------- | -------- | -------- |
@@ -167,7 +167,7 @@ class Adam(object):
 
 ![](https://i.imgur.com/DAWmDYI.png =500x)
 
-比較三種方法，可以發現自適應調節 learning rate 的方法 (Adagrad, Adam) 前期下降的速度很快，但是最後收斂到的 local minimum 沒有比一般的 Gradient Descent 方法好。
+比較三種方法，可以發現自適應調節 learning rate 的方法 (Adagrad, Adam) 前期下降的速度很快，但是最後收斂到的 local minimizer 沒有比一般的 Gradient Descent 方法好。
 
 每種方法的梯度下降過程動畫可見：
 ```bash
@@ -185,7 +185,7 @@ class Adam(object):
 
 #### 實驗結果（二）
 
-對於第二個函數 ( $f(x_1,x_2) = 100(x_2-x_1)^2 + (1-x_1)^2$ )，三種方法得到的 local minimum 如下：
+對於第二個函數 ( $f(x_1,x_2) = 100(x_2-x_1)^2 + (1-x_1)^2$ )，三種方法得到的 local minimizer 如下：
 
 | 方法 | 變數值 | 函數值 |
 | -------- | -------- | -------- |
@@ -213,7 +213,7 @@ class Adam(object):
 
 #### 實驗結果（三）
 
-對於第三個函數 ( $f(x_1,x_2) = sin(x_1^2 + x_2^2)$ )，三種方法得到的 local minimum 如下：
+對於第三個函數 ( $f(x_1,x_2) = sin(x_1^2 + x_2^2)$ )，三種方法得到的 local minimizer 如下：
 
 | 方法 | 變數值 | 函數值 |
 | -------- | -------- | -------- |
@@ -223,7 +223,7 @@ class Adam(object):
 
 ![](https://i.imgur.com/Z1vMB6c.png =500x)
 
-比較三個方法， Adam 的收斂速度前期較快，但是最後得到的 local minimum 並不好，而 Adagrad 最後最早收斂，並且在三個方法中，有最好的 local minimum。
+比較三個方法， Adam 的收斂速度前期較快，但是最後得到的 local minimizer 並不好，而 Adagrad 最後最早收斂，並且在三個方法中，有最好的 local minimizer。
 
 但是觀察 `./logs/Adagrad_basin_log.csv` 的內容可以發現，Adagrad 方法下降到接近 local minimum 的地方會有震盪的情形，這是一個問題。
 
