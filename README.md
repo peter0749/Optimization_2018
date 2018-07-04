@@ -2,3 +2,6 @@
 
 ### HW1: Gradient Descent
 1. Adam, Adagrad
+
+### Practice: Evolution Strategy
+1. Evolution Strategy
